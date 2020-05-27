@@ -1,0 +1,580 @@
+@import url(./fonts.css);
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: var(--Oswald-Regular);
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+a 
+{
+    text-decoration: none;
+    outline: none;
+}
+:root
+{
+    --Oswald-Bold: 'Oswald-Bold',cursive;
+    --Oswald-Regular: 'Oswald-Regular',cursive;
+    --Item: #282726;
+    --Item-Muda: #54504c;
+    --Abu-abu: #86817c;
+    --Cokelat-Muda: #d6cab0;
+    --Putih: #f2eee7;
+    --Navy: #435892;
+    --Biru-Gelap: #393f50;
+}
+.sampul 
+{
+    /* background-color: #000; */
+    max-width: 1100px;
+    margin: auto;
+}
+.kontainer
+{
+    /* background: red; */
+    margin: 0px 50px;
+}
+.baris 
+{
+    padding: 70px 0px;
+}
+.tengah 
+{
+    font-family: var(--Oswald-Bold);
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    /* background: red; */
+}
+
+/* HEADER */
+header 
+{
+    background: var(--Item);
+    position: fixed;
+    width: 100%;
+    /* margin-top: -10px; */
+    /* padding: 7px; */
+}
+header .kontainer 
+{
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+header .kontainer .nama-brand h3
+{
+    color: #fff;
+    font-family: var(--Oswald-Bold);
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header .kontainer .navigasi ul 
+{
+    list-style: none;    
+}
+header .kontainer .navigasi ul li 
+{
+    display: inline-block;
+    /* background: Orange; */
+    padding: 20px;
+}
+header .kontainer .navigasi ul li a
+{
+    font-family: var(--Oswald-Bold);
+    /* margin-left: 15px; */
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* HOME */
+.home
+{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/Foto-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+}
+.home .kontainer 
+{
+    /* background-color: red; */
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    float: left;
+}
+.home .kontainer .konten-home
+{
+    /* background-color: blue; */
+    text-align: left!important;
+}
+.home .kontainer .konten-home h1
+{
+    font-family: var(--Oswald-Bold);
+    font-size: 57px;
+    font-weight: 500;
+    margin: 0px;
+    color: #fff;
+}
+.home .kontainer .konten-home h3 
+{
+    font-family: var(--Oswald-Regular);
+    font-size: 37px;
+    font-weight: 500;
+    color: #fff;
+}
+.home .kontainer .konten-home .unduh-cv
+{
+    /* background: maroon; */
+    margin-top: 31px;
+}
+.home .kontainer .konten-home .unduh-cv a
+{
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 7px 21px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+.home .kontainer .konten-home .unduh-cv a:hover
+{
+    color: #000;
+    background: #fff;    
+}
+
+/* ABOUT */
+.about 
+{
+    background-color: #fff;
+}
+.about .konten-about
+{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+}
+.about .konten-about .foto-profil img
+{
+    width: 380px;
+    height: 440px;
+}
+.about .konten-about .isi-bio
+{
+    padding-right: 70px;
+    /* background: yellow; */
+    
+}
+.about .konten-about .isi-bio .info-pribadi
+{
+    margin: 10px 0px;
+}
+.about .konten-about .isi-bio .info-pribadi h3 
+{
+    font-size: 21px;
+    font-weight: 700;
+}
+.about .konten-about .isi-bio .info-pribadi h4
+{
+    margin: 10px 0px;
+    font-size: 21px;
+    font-weight: 600;
+}
+.about .konten-about .isi-bio .info-pribadi p 
+{
+    font-size: 16px;
+}
+.about .konten-about .isi-bio .skills .bulat
+{
+    margin: 15px 0px;
+}
+.about .konten-about .isi-bio .skills .bulat p 
+{
+    font-size: 16px;
+    font-weight: 570;
+}
+.about .konten-about .isi-bio .skills .bulat .skill-bar
+{
+    margin-top: 7px;
+    width: 100%;
+    height: 5px;
+    background: var(--Cokelat-Muda);
+    
+}
+.about .konten-about .isi-bio .skills .bulat .skill-bar .isi-skill-bar
+{
+    background: var(--Navy);
+    height: 5px;
+}
+
+
+/* SERVICES */
+.services
+{
+    background-color: var(--Putih);
+}
+.services .layanan
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.services .layanan .kotak-layanan
+{
+    background: #fff;
+    margin: 10px;
+    text-align: center;
+    max-width: 45vh;
+    min-height: 40vh;
+    padding: 25px;
+    border-top: 5px solid #282726;
+}
+.services .layanan .kotak-layanan p 
+{
+    font-size: 19px;
+    font-weight: 400;
+}
+.services .layanan .kotak-layanan i 
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--Item);
+}
+.services .layanan .kotak-layanan h4
+{
+    font-size: 21px;
+    margin: 10px;
+}
+
+/* PORTFOLIO */
+.portfolio
+{
+    background: #fff;
+}
+.portfolio .kuli 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio .kuli .kotak-kuli img 
+{
+    width: 300px;
+    height: 300px;
+}
+
+/* CONTACT */
+.contact
+{
+    background: var(--Putih);
+}
+.contact .kontak .blok-kontak 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact .kontak .blok-kontak .kontak-saya 
+{
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+    width: 50vh;
+}
+.contact .kontak .blok-kontak .kontak-saya .kotak-wa
+{
+    display: flex;
+    align-items: baseline;
+}
+.contact .kontak .blok-kontak .kontak-saya .kotak-wa i
+{
+    color: #000;
+    font-size: 30px;
+    font-weight: 550;
+    margin-right: 5px;
+}
+.contact .kontak .blok-kontak .kontak-saya h3 
+{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 45px;
+}
+.contact .kontak .blok-kontak .kontak-saya p 
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+.contact .kontak .blok-kontak .sosmed
+{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+    width: 50vh;
+}
+.contact .kontak .blok-kontak .sosmed h3
+{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.contact .kontak .blok-kontak .sosmed .ikon 
+{
+    display: flex;
+    margin-right: 25px;
+}
+.contact .kontak .blok-kontak .sosmed .ikon .kotak i
+{
+    font-size: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* FOOTER */
+footer 
+{
+    background: var(--Item);
+    color: #fff;
+    display: flex;
+}
+footer .hak-paten p
+{
+    text-align: center!important;
+    padding: 35px 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+.bars .btn-bars .fas
+{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+@media(max-width: 930px)
+{
+    .kontainer
+    {
+        margin: 0px 35px;
+    }
+    header .kontainer 
+    {
+        padding: 14px 0px;
+        align-items: baseline;
+    }
+    .bars .btn-bars .fas
+    {
+        display: inline-block;
+    }
+    header .kontainer .navigasi
+    {
+        display: none;
+        background: var(--Item);
+        position: absolute;
+        top: 65px;
+        left: 0;
+        transition: 1s ease;
+        width: 100%;
+    }
+    header .kontainer .navigasi ul li 
+    {
+        display: block;
+        margin-left: 0px;
+    }
+    header .kontainer .batas
+    {
+        border-top: 1px solid #eee;
+    }
+    header .kontainer .navigasi ul li a
+    {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    header .kontainer .nama-brand h3
+    {
+        font-size: 25px;
+    }
+
+    .home .kontainer .konten-home h1
+    {
+        font-size: 50px;
+    }
+    .home .kontainer .konten-home h3 
+    {
+        font-size: 27px;
+    }
+    .home .kontainer .konten-home .unduh-cv
+    {
+        margin-top: 27px;
+    }
+    .home .kontainer .konten-home .unduh-cv a
+    {
+        font-size: 20px;
+        padding: 5px 19px;
+    }
+    .about .konten-about
+    {
+        display: block;
+    }
+    .about .konten-about .isi-bio
+    {
+        padding-right: 0px;
+        
+    }
+    .about .konten-about .foto-profil 
+    {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .about .konten-about .foto-profil img 
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width: 750px)
+{
+    .kontainer
+    {
+        margin: 0px 27px;
+    }
+    header .kontainer .nama-brand h3
+    {
+        font-size: 21px;
+    }
+    header .kontainer .navigasi
+    {
+        top: 58px;
+    }
+    header .kontainer .navigasi ul li a
+    {
+        font-size: 17px;
+    }
+    .home .kontainer .konten-home h1
+    {
+        font-size: 35px;
+    }
+    .home .kontainer .konten-home h3 
+    {
+        font-size: 27px;
+    }
+    .home .kontainer .konten-home .unduh-cv
+    {
+        margin-top: 24px;
+    }
+    .home .kontainer .konten-home .unduh-cv a
+    {
+        font-size: 21px;
+        padding: 5px 15px;
+    }
+    .about .konten-about .foto-profil img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .services .layanan
+    {
+        display: flex;
+    }
+    .services .layanan .kotak-layanan
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .contact .kontak .blok-kontak 
+    {
+        flex-direction: column;
+    }
+    .contact .kontak .blok-kontak .kontak-saya, 
+    .contact .kontak .blok-kontak .kontak-saya .kotak-wa
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center!important;
+    }
+    .contact .kontak .blok-kontak .sosmed .isi-sosmed .ikon
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .contact .kontak .blok-kontak .sosmed .ikon .kotak i
+    {
+        padding-right: 0px;
+        margin: 0px 10px;
+    }
+    .contact .kontak .blok-kontak .kontak-saya h3,
+    .contact .kontak .blok-kontak .sosmed h3
+    {
+        font-size: 40px;
+    }
+    .contact .kontak .blok-kontak .kontak-saya p 
+    {
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .contact .kontak .blok-kontak .kontak-saya .kotak-wa i
+    {
+        font-size: 25px;
+    }
+    .contact .kontak .blok-kontak .kontak-saya,
+    .contact .kontak .blok-kontak .sosmed
+    {
+        text-align: center!important;
+        width: 100%;
+    }
+    .contact .kontak .blok-kontak .sosmed .ikon .kotak i
+    {
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .kontainer
+    {
+        margin: 0px 25px;
+    }
+    header .kontainer .nama-brand h3
+    {
+        font-size: 20px;
+    }
+    header .kontainer .navigasi
+    {
+        top: 55px;
+    }
+    header .kontainer .navigasi ul li a
+    {
+        font-size: 15px;
+    }
+}
